@@ -38,3 +38,6 @@ This starter application is a simple microservice that incorporates the [Express
 - The [Swagger UI](http://swagger.io/swagger-ui/) is running on: `/swagger/api-docs`
 - Health endpoint: `/health`
 - CPU load generation endpoint: `/load`
+
+- load generation script: `while sleep 1; do curl --max-time 2 -s http://$HOST/load/50; done`
+
